@@ -40,7 +40,7 @@ const About = () => {
 
         </div>
 
-          <img src = {brain} className='absolute -top-4 right-36' />
+          <img src = {brain} className='absolute top-12 right-56 -rotate-45 w-[25rem]' />
        </div>
        
  
