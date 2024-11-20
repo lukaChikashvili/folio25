@@ -35,7 +35,7 @@ const Hero = () => {
 
     const uniforms = useRef({
         uAmplitude: { value: 0.15},
-        uWaveLength: { value: 3},
+        uWaveLength: { value: 4},
         uTime: {value: 0},
         uTexture: { value: geo}
     });
@@ -49,7 +49,7 @@ const Hero = () => {
      <>
 
       <primitive object={computer.scene} scale = {0.05}  castShadow position = {[1.6, 0, -0.8]} />
-      <primitive object={pole.scene} scale = {0.3}  castShadow position = {[3.5, 0, -1]} />
+      <primitive object={pole.scene} scale = {0.3}  castShadow position = {[3.25, 0, -1]} />
       
       <mesh ref={flag}  position={[3.5, 1, -0.2]} scale={0.7}>
          <planeGeometry args={[1, 1, 64, 64]}/>
