@@ -12,6 +12,8 @@
     height: 100%;
     background: linear-gradient(130deg, #000000, #2c003e);
     font-family: 'Berenika', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 nav a{
@@ -85,5 +87,33 @@ nav a::after {
   
   .neon-button:focus {
     outline: none;
+  }
+
+  .circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #FABC3F;
+    box-shadow: 0 0 15px rgba(250, 188, 63, 0.5), 0 0 30px rgba(250, 188, 63, 0.3);
+  }
+  
+  .arrow {
+    flex: 1;
+    height: 2px;
+    background-color: #FABC3F;
+    position: relative;
+  }
+  
+  .arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #FABC3F;
+    transform: translateY(-50%);
   }
   
