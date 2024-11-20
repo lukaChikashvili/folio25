@@ -1,5 +1,5 @@
 import React from 'react'
-import me from '../assets/me.jpg'
+import brain from '../assets/brain.png'
 const About = () => {
   return (
     <div className='w-full h-screen text-white p-[4rem] relative'>
@@ -40,8 +40,7 @@ const About = () => {
 
         </div>
 
-    
-        
+          <img src = {brain} className='absolute -top-4 right-36' />
        </div>
        
  
