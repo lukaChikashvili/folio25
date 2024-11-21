@@ -1,4 +1,6 @@
 import React from 'react'
+import { projectList } from './ProjectList'
+import Project from './Project'
 
 const Projects = () => {
   return (
@@ -7,6 +9,20 @@ const Projects = () => {
        <h1 className='text-4xl text-[#FABC3F]'>Personal Projects</h1>
        <span className='w-2/5 h-[0.5px] mt-2 bg-gray-400'></span>
        </div>
+        
+       <div className="mt-12 flex flex-col gap-12">
+        {projectList.map((value) => (
+          <Project
+            key={value.id}
+            name={value.name}
+            text={value.text}
+            stack={value.stack}
+            github={value.github}
+            live={value.live}
+            img={value.img}
+          />
+        ))}
+      </div>
     </div>
   )
 }

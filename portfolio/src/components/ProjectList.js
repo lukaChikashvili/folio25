@@ -1,3 +1,5 @@
+import mix from '../assets/mixmaster.png'
+
 export const projectList = [
     {
         id: 1,
@@ -19,7 +21,8 @@ export const projectList = [
         ],
 
         github: 'https://github.com/lukaChikashvili/MixMaster',
-        live: 'https://mix-master-seven.vercel.app/'
+        live: 'https://mix-master-seven.vercel.app/',
+        img: mix
 
     },
 
