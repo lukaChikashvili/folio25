@@ -9,7 +9,7 @@ const Project = ({ name, text, stack, github, live, img }) => {
         <img
           src={img}
           alt={`${name} preview`}
-          className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-500 ease-in object-cover w-full h-auto md:h-[300px] lg:h-[400px] hover:opacity-75"
+          className="rounded-lg shadow-md hover:shadow-lg transition-shadow duration-500 ease-in object-cover w-full h-auto md:h-[300px] lg:h-[300px] hover:opacity-75"
         />
       </div>
 

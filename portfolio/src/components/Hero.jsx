@@ -43,7 +43,30 @@ const Hero = () => {
 
     useFrame(() => {
         flag.current.material.uniforms.uTime.value += 0.05;
-    })
+
+        fireflies.current.forEach((firefly, idx) => {
+            const time = uniforms.current.uTime.value + idx;
+            firefly.position.x += Math.sin(time * 0.3) * 0.01;
+            firefly.position.y += Math.cos(time * 0.4) * 0.01;
+            firefly.position.z += Math.sin(time * 0.2) * 0.01;
+          });
+    });
+
+    const fireflies = useRef([]);
+
+    const createFireflies = (count) => {
+      const positions = [];
+      for (let i = 0; i < count; i++) {
+        positions.push([
+          (Math.random() - 0.5) * 5, 
+          Math.random() * 2 + 0.5, 
+          (Math.random() - 0.5) * 5, 
+        ]);
+      }
+      return positions;
+    };
+  
+    const fireflyPositions = createFireflies(100);
 
   return (
      <>
@@ -60,6 +83,20 @@ const Hero = () => {
 
          />
       </mesh>
+
+      {fireflyPositions.map((pos, idx) => (
+        <Float key={idx} speed={1} rotationIntensity={1.5} floatIntensity={2}>
+          <mesh
+            ref={(el) => (fireflies.current[idx] = el)}
+            position={pos}
+            scale={0.009}
+          >
+            <sphereGeometry />
+            <meshStandardMaterial color="#FABC3F" emissive="#FFD700" emissiveIntensity={2} />
+          </mesh>
+          
+        </Float>
+      ))}
      </>
   )
 }

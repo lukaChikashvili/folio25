@@ -148,7 +148,7 @@ const Skills = () => {
         {skills.map((value) => (
           <div key={value.id} className="flex mt-4">
             <p className="text-xl flex items-center gap-4 text-gray-400">
-              <div className="arrow2"></div>{value.name}
+              <span className="arrow2"></span>{value.name}
             </p>
           </div>
         ))}
@@ -161,7 +161,7 @@ const Skills = () => {
         {skills2.map((value) => (
           <div key={value.id} className="flex mt-4">
             <p className="text-xl flex items-center gap-4 text-gray-400">
-              <div className="arrow2"></div>{value.name}
+              <span className="arrow2"></span>{value.name}
             </p>
           </div>
         ))}
@@ -174,7 +174,7 @@ const Skills = () => {
         {skills3.map((value) => (
           <div key={value.id} className="flex mt-4">
             <p className="text-xl flex items-center gap-4 text-gray-400">
-              <div className="arrow2"></div>{value.name}
+              <span className="arrow2"></span>{value.name}
             </p>
           </div>
         ))}
