@@ -10,7 +10,7 @@ const Projects = () => {
        <span className='w-2/5 h-[0.5px] mt-2 bg-gray-400'></span>
        </div>
         
-       <div className="mt-12 flex flex-col gap-12">
+       <div className="mt-16 flex flex-col gap-24">
         {projectList.map((value) => (
           <Project
             key={value.id}
