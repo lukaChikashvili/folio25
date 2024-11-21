@@ -66,7 +66,7 @@ const Hero = () => {
       return positions;
     };
   
-    const fireflyPositions = createFireflies(100);
+    const fireflyPositions = createFireflies(30);
 
   return (
      <>
