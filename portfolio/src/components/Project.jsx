@@ -1,9 +1,13 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import { motion } from 'framer-motion'
 
 const Project = ({ name, text, stack, github, live, img }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-12 p-6 md:p-8 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full max-w-7xl mx-auto">
+    <motion.div initial = {{ opacity: 0, translateY: 15}}
+    whileInView={{opacity: 1, translateY: 0 }} 
+    transition={{duration: 0.5, delay: 0.7}}
+    className="flex flex-col md:flex-row items-center gap-12 p-6 md:p-8 border border-gray-700 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full max-w-7xl mx-auto">
       
       <div className="flex-1">
         <img
@@ -49,7 +53,7 @@ const Project = ({ name, text, stack, github, live, img }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
