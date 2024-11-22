@@ -68,7 +68,7 @@ const About = () => {
 
       <motion.img initial = {{ opacity: 0}}
                        whileInView={{opacity: 1 }} 
-                       transition={{duration: 1, delay: 1}}
+                       transition={{duration: 1, delay: 3}}
         src={brain}
         className="absolute top-12 right-0 md:right-56 -rotate-45 w-[15rem] md:w-[25rem] hidden md:block"
       />
