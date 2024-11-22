@@ -9,7 +9,7 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className='absolute w-full bg-transparent px-12 py-6 text-white flex items-center justify-between z-10 text-md'> 
+    <div className='absolute  w-full bg-transparent px-12 py-6 text-white flex items-center justify-between z-10 text-md'> 
        <div className='flex items-center gap-4'>
           <motion.img initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
@@ -22,20 +22,27 @@ const Header = () => {
        <motion.nav initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 1}}
-        className=' items-center gap-6 list-none hidden md:flex'>
+        className=' items-center gap-6 list-none hidden md:flex  '>
         <span className='text-[#FABC3F] cursor-pointer'><Moon /></span>
          <motion.li initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 0.7}}
-         ><a href = "#">About</a></motion.li>
+         ><a href = "#about">About</a></motion.li>
+
+<motion.li initial = {{ opacity: 0, translateY: 15}}
+    whileInView={{opacity: 1, translateY: 0 }} 
+    transition={{duration: 0.5, delay: 0.7}}
+         ><a href = "#skills">Skills</a></motion.li>
+
+
          <motion.li initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 0.9}}
-         ><a href = "#">Projects</a></motion.li>
+         ><a href = "#projects">Projects</a></motion.li>
           <motion.li initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 1}}
-         ><a href = "#">Contact</a></motion.li>
+         ><a href = "#contact">Contact</a></motion.li>
        </motion.nav>
 
        <div className='md:hidden flex items-center'>

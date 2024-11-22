@@ -13,6 +13,8 @@
     background: linear-gradient(130deg, #000000, #2c003e);
     font-family: 'Berenika', sans-serif;
   overflow: auto;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 

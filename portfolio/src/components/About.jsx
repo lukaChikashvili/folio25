@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <div className="w-full h-screen text-white p-4 md:p-[4rem] relative">
+    <section id = "about" className="w-full h-screen text-white p-4 md:p-[4rem] relative">
       <div className="flex flex-col gap-4 pt-12 mt-6 md:mt-0">
         <motion.h1 initial = {{ clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)'}}
                        whileInView={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}
@@ -72,7 +72,7 @@ const About = () => {
         src={brain}
         className="absolute top-12 right-0 md:right-56 -rotate-45 w-[15rem] md:w-[25rem] hidden md:block"
       />
-    </div>
+    </section>
   );
 };
 

@@ -138,7 +138,7 @@ const Skills = () => {
     ];
 
   return (
-    <div className="w-full h-screen text-white p-4 md:p-[4rem]">
+    <section id = "skills" className="w-full h-screen text-white p-4 md:p-[4rem]">
   <div className="flex flex-col gap-4 pt-12 mt-[15rem] md:mt-0">
     <motion.h1 initial = {{ clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)'}}
                        whileInView={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }}
@@ -206,7 +206,7 @@ const Skills = () => {
       </div>
     </div>
   </div>
-</div>
+</section>
 
   )
 }
