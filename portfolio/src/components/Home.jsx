@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
-    <div className="text-white w-full h-screen bg-transparent absolute top-0 left-0 p-4 md:p-[4rem]">
+    <section id = "home" className="text-white w-full h-screen bg-transparent absolute top-0 left-0 p-4 md:p-[4rem]">
       <div className="pt-24 md:pt-[6rem] flex flex-col gap-6 mt-[4rem] lg:mt-0 lg:gap-8">
         <h2 className="text-2xl md:text-3xl lg:text-4xl">
           <motion.span initial = {{ clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)'}}
@@ -42,7 +42,7 @@ const Home = () => {
           Resume
         </motion.button>
       </div>
-    </div>
+    </section>
   )
 }
 
