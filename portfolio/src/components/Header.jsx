@@ -43,7 +43,7 @@ const Header = () => {
           <motion.li initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 1}}
-         ><a href = "#contact">Contact</a></motion.li>
+         ><a href = "#footer">Contact</a></motion.li>
        </motion.nav>
 
        <div className='md:hidden fixed top-8 right-6 flex items-center z-10'>
