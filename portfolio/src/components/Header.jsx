@@ -1,13 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import cup from '../assets/cup.png'
-import {  Facebook, Github, Linkedin, MenuIcon, Moon, Play, X } from 'lucide-react'
+import {  Facebook, Github, Linkedin, MenuIcon, Moon, Play, Sun, X } from 'lucide-react'
 import { motion } from 'framer-motion'
-import Contact from './Contact'
+import { UserContext } from '../context/UserContext'
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const { darkMode,  setDarkMode } = useContext(UserContext);
+
+  const toggleTheme = () => {
+   
+    setDarkMode((prev) => !prev);
+ 
+  }
 
   return (
     <div className='absolute  w-full bg-transparent px-12 py-6 text-white flex items-center justify-between z-10 text-md'> 
@@ -24,7 +32,10 @@ const Header = () => {
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 1}}
         className=' items-center gap-6 list-none hidden md:flex  '>
-        <span className='text-[#FABC3F] cursor-pointer'><Moon /></span>
+
+<span className='text-[#FABC3F] cursor-pointer' onClick={toggleTheme}>
+ {darkMode ? <Moon /> : <Sun /> }
+</span>
          <motion.li initial = {{ opacity: 0, translateY: 15}}
     whileInView={{opacity: 1, translateY: 0 }} 
     transition={{duration: 0.5, delay: 0.7}}
