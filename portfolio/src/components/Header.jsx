@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import cup from '../assets/cup.png'
-import { MenuIcon, Moon } from 'lucide-react'
+import {  Facebook, Github, Linkedin, MenuIcon, Moon } from 'lucide-react'
 import { motion } from 'framer-motion'
+import Contact from './Contact'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,17 +46,35 @@ const Header = () => {
          ><a href = "#contact">Contact</a></motion.li>
        </motion.nav>
 
-       <div className='md:hidden flex items-center'>
+       <div className='md:hidden fixed top-8 right-6 flex items-center z-10'>
         <button onClick={toggleMenu} className='text-white'>
            <MenuIcon />
         </button>
       </div>
 
-      <div className={`md:hidden absolute top-20 left-0 w-full bg-black text-white py-4 transition-all ${isMenuOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden fixed top-20 left-0 w-full bg-black text-white py-4 transition-all ${isMenuOpen ? 'block' : 'hidden'}`}>
         <li className='px-6 py-2'><a href="#">About</a></li>
         <li className='px-6 py-2'><a href="#">Projects</a></li>
-        <li className='px-6 py-2'><a href="#">Contact</a></li>
+        <li className='px-6 py-2'><a href="#">Skills</a></li>
+
+        <div className='fixed right-20  flex flex-row md:hidden gap-2 p-2 rounded-md'>
+        <Linkedin
+          className='duration-300 ease-in cursor-pointer text-gray-600 hover:text-black hover:-translate-x-[1.5px]'
+          onClick={() => showLink('https://www.linkedin.com/in/luka-chikashvili/')}
+        />
+        <Github
+          className='duration-300 ease-in cursor-pointer text-gray-600 hover:text-black hover:-translate-x-[1.5px]'
+          onClick={() => showLink('https://github.com/lukaChikashvili')}
+        />
+        <Facebook
+          className='duration-300 ease-in cursor-pointer text-gray-600 hover:text-black hover:-translate-x-[1.5px]'
+          onClick={() => showLink('https://www.facebook.com/profile.php?id=61565951550341')}
+        />
       </div>
+      </div>
+
+      
+    
     </div>
   )
 }
