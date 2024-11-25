@@ -2,6 +2,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const Home = () => {
+
+  const showResume = () => {
+     window.open('./LukaChikashvili_resume.pdf', '_blank');
+  }
+
+
   return (
     <section id = "home" className="text-white w-full h-screen bg-transparent absolute top-0 left-0 p-4 md:p-[4rem]">
       <div className="pt-24 md:pt-[6rem] flex flex-col gap-6 mt-[4rem] lg:mt-0 lg:gap-8">
@@ -38,6 +44,7 @@ const Home = () => {
         <motion.button initial = {{ opacity: 0}}
                        whileInView={{opacity: 1 }} 
                        transition={{duration: 1.5, delay: 1.3}}
+                       onClick = {showResume}
         className="bg-[#FABC3F] w-full md:w-[15rem] mt-4 rounded-md px-12 py-2 shadow-lg neon-button text-sm">
           Resume
         </motion.button>
