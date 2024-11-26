@@ -76,7 +76,7 @@ export const projectList = [
         ],
 
         github: 'https://github.com/lukaChikashvili/neoWriters2',
-        live: 'https://neowriters-front.onrender.com/',
+        live: 'https://neowriters.shop/',
         img: neo
 
     },
