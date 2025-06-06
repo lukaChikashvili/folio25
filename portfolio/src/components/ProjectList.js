@@ -6,11 +6,142 @@ import vanga from '../assets/vanga.png'
 import saflavi from '../assets/saflavi.png'
 import cigar from '../assets/cigar.png'
 import port from '../assets/port.png'
-
+import tamada from '../assets/tamada.png'
+import girl from '../assets/girl.png'
+import election from '../assets/election.png'
+import blog from '../assets/blog.png'
+import flow from '../assets/flow.png'
+import baia from '../assets/baia.png'
 
 export const projectList = [
+
     {
         id: 1,
+        name: "Tamada",
+        text: `
+        Tamada is a modern web application that allows users to discover and connect with professional Tamadas — traditional Georgian event hosts. Users can browse a curated list of Tamadas, apply filters based on style, experience, or region, add favorites, and book meetings directly through the platform. The interface is smooth, responsive, 
+        and optimized for a seamless booking experience. Filter Tamadas by style, location, and availability,  Add Tamadas to a personal favorites list, Book meetings directly from the platform,  Admin panel for managing listings and much more.
+        `,
+        stack: [
+            {id: 1, title: "Next.js" },
+            {id: 2, title: "Tailwind.css" },
+            {id: 3, title: "Supabase" },
+            {id: 4, title: "Prisma" },
+            {id: 5, title: "Shadcn/UI" },
+        ],
+
+        github: 'https://github.com/lukaChikashvili/Tamada',
+        live: 'https://tamada-19ki.vercel.app/',
+        img: tamada
+
+    },
+
+    {
+        id: 2,
+        name: "My3DGirl",
+        text: `
+        is a creative web-based application that allows users to interact with a customizable 3D female character in real time. Built with modern 3D web technologies, the platform offers an immersive and playful environment
+         where users can:  Choose from a variety of outfits to dress the 3D girl model, from casual styles to themed costumes, Change or remove clothes to personalize the appearance, Capture screenshots of your styled 3D avatar, Post your creations to a public feed to share with others or browse outfits styled by the community
+        `,
+        stack: [
+            {id: 1, title: "Next.js" },
+            {id: 2, title: "Tailwind.css" },
+            {id: 3, title: "Supabase" },
+            {id: 4, title: "Prisma" },
+            {id: 5, title: "Three.js" },
+        ],
+
+        github: 'https://github.com/lukaChikashvili/memoria',
+        live: 'https://memoria-gilt.vercel.app/',
+        img: girl
+
+    },
+
+    {
+        id: 3,
+        name: "FakeElections",
+        text: `
+        is a satirical web app that simulates a digital voting environment, where users can register to vote and cast their vote for various political parties in a fictional election. The platform is designed for fun, experimentation, and educational purposes — perfect for testing UI/UX around voting systems or just engaging users in a lighthearted mock political process.
+        `,
+        stack: [
+            {id: 1, title: "Next.js" },
+            {id: 2, title: "Tailwind.css" },
+            {id: 3, title: "Supabase" },
+            {id: 4, title: "Prisma" },
+      
+        ],
+
+        github: 'https://github.com/lukaChikashvili/FakeElections',
+        live: 'https://fake-election.vercel.app/',
+        img: election
+
+    },
+
+    {
+        id: 4,
+        name: "Personal blog",
+        text: `
+          this is my blog about programming and languages.
+        `,
+        stack: [
+            {id: 1, title: "Next.js" },
+            {id: 2, title: "Tailwind.css" },
+            {id: 3, title: "Sanity" },
+            {id: 4, title: "shadcn/UI" },
+            {id: 5, title: "Typescript" },
+      
+        ],
+
+        github: 'https://github.com/lukaChikashvili/blog',
+        live: 'https://www.lukachikashvili.pro/',
+        img: blog
+
+    },
+
+    {
+        id: 5,
+        name: "Baia Sports Complex",
+        text: `
+          Gym Full stack aplication, where you can book visits, read blog and so on. it has also admin page, where admin can control users
+        `,
+        stack: [
+            {id: 1, title: "Node.js" },
+            {id: 2, title: "MongoDB" },
+            {id: 3, title: "React.js" },
+            {id: 4, title: "tawilwind.css" },
+            
+      
+        ],
+
+        github: 'https://github.com/lukaChikashvili/blog',
+        live: 'https://baia-frontend.onrender.com/',
+        img: baia
+
+    },
+
+    {
+        id: 6,
+        name: "FluentFlow",
+        text: `
+          language learning application, where you can create online dictionary, upload books and  so on.
+        `,
+        stack: [
+            {id: 1, title: "Node.js" },
+            {id: 2, title: "MongoDB" },
+            {id: 3, title: "React.js" },
+            {id: 4, title: "tawilwind.css" },
+            
+      
+        ],
+
+        github: 'https://github.com/lukaChikashvili/taro',
+        live: 'https://fluent-flow.onrender.com/',
+        img: flow
+
+    },
+
+    {
+        id: 7,
         name: "MixMaster",
         text: `
         Welcome to MixMaster, the cutting edge 3D software designed for artists, designers, 
@@ -36,7 +167,7 @@ export const projectList = [
 
 
     {
-        id: 2,
+        id: 8,
         name: "Planetarium X",
         text: `
         Planetarium X is your gateway to the cosmos! Explore stunningly realistic 3D representations of planets in
@@ -58,7 +189,7 @@ export const projectList = [
     },
 
     {
-        id: 3,
+        id: 9,
         name: "NeoWriters",
         text: `
         NeoWriters is a platform for aspiring authors and publishing enthusiasts.
@@ -83,7 +214,7 @@ export const projectList = [
 
 
     {
-        id: 4,
+        id: 10,
         name: "EternalMemories",
         text: `
         Eternal Memories is a heartfelt platform dedicated to honoring the lives and legacies of loved ones.
@@ -106,7 +237,7 @@ export const projectList = [
     },
 
     {
-        id: 5,
+        id: 11,
         name: "Vangadamus",
         text: `
         Step into the mystical world of Vangadamus, the fortune-teller app that reveals your 
@@ -129,7 +260,7 @@ export const projectList = [
     },
 
     {
-        id: 6,
+        id: 12,
         name: "Paradise",
         text: `
         Paradise is a unique and thoughtful app that lets you design and customize gravestones 
@@ -153,7 +284,7 @@ export const projectList = [
     },
 
     {
-        id: 7,
+        id: 13,
         name: "Cigars",
         text: `
         Cigars is a captivating website dedicated to exploring the rich history and timeless tradition of cigars. 
@@ -177,7 +308,7 @@ export const projectList = [
     },
 
     {
-        id: 8,
+        id: 14,
         name: "Portfolio 2023",
         text: `
         My old portfolio was a showcase of my early creative journey as a web developer. 
