@@ -12,7 +12,7 @@ import election from '../assets/election.png'
 import blog from '../assets/blog.png'
 import flow from '../assets/flow.png'
 import baia from '../assets/baia.png'
-
+import portf from '../assets/portfolio.png'
 export const projectList = [
 
     {
@@ -309,7 +309,7 @@ export const projectList = [
 
     {
         id: 14,
-        name: "Portfolio 2023",
+        name: "Portfolio 2024",
         text: `
         My old portfolio was a showcase of my early creative journey as a web developer. 
         It highlighted my skills, projects, and growth, reflecting my passion for innovative design and coding. 
@@ -328,6 +328,29 @@ export const projectList = [
         github: 'https://github.com/lukaChikashvili',
         live: 'https://portfolio2-rho-lyart.vercel.app/',
         img: port
+
+    },
+
+    {
+        id: 15,
+        name: "Portfolio 2023",
+        text: `
+        My old portfolio was a showcase of my early creative journey as a web developer. 
+        It highlighted my skills, projects, and growth, reflecting my passion for innovative design and coding. 
+        A testament to my beginnings, 
+        it served as a foundation for the work and ideas that continue to inspire me today..
+        `,
+        stack: [
+            {id: 1, title: "React" },
+            {id: 2, title: "Three.js" },
+            {id: 3, title: "Tailwind.css" },
+            {id: 5, title: "GSAP" },
+           
+        ],
+
+        github: 'https://github.com/lukaChikashvili/Portfolio?tab=readme-ov-file',
+        live: 'https://portfolio-ten-sigma-68.vercel.app/',
+        img: portf
 
     },
 
