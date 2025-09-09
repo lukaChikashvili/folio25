@@ -9,7 +9,7 @@ const Contact = () => {
       <div className='hidden md:flex flex-row md:flex-col gap-2 p-2 rounded-md'>
         <Linkedin
           className='duration-300 ease-in cursor-pointer text-gray-600 hover:text-black hover:-translate-x-[1.5px]'
-          onClick={() => showLink('www.linkedin.com/in/lukachikashvili')}
+          onClick={() => showLink('https://www.linkedin.com/in/lukachikashvili/')}
         />
         <Github
           className='duration-300 ease-in cursor-pointer text-gray-600 hover:text-black hover:-translate-x-[1.5px]'
